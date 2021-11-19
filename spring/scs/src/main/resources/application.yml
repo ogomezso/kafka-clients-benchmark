@@ -1,0 +1,21 @@
+server:
+  port: 18080
+spring:
+  jmx:
+    enabled: true
+  cloud:
+    stream:
+      function:
+        definition: chuckProcessor
+      bindings:
+        chuckProcessor-out-0:
+          binder: kafka
+          destination: chuck
+          producer:
+            useNativeEncoding: true
+      default-binder: kafka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,15 @@
+{
+  "name": "ChuckFact",
+  "type": "record",
+  "namespace": "org.github.ogomezso.scs.infrastructure.model.chuck",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "name": "fact",
+      "type": "string"
+    }
+  ]
+}

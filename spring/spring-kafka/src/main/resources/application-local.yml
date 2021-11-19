@@ -1,0 +1,8 @@
+spring:
+  jmx:
+    enabled: true
+kafka:
+  bootstrap-servers: localhost:9092
+  chuck-client-id: chuck-producer
+  chuck-topic: chuck-spring-topic
+  schema-registry-url: http://localhost:8081

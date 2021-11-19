@@ -1,0 +1,8 @@
+spring:
+  jmx:
+    enabled: true
+kafka:
+  bootstrap-servers: broker:29092
+  chuck-client-id: chuck-producer
+  chuck-topic: chuck-spring-topic
+  schema-registry-url: http://schema-registry:8081

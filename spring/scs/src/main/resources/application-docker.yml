@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: broker:29092
+          producer-properties:
+            key.serializer: org.apache.kafka.common.serialization.StringSerializer
+            value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+            schema.registry.url: http://schema-registry:8081
+            auto.register.schemas: true
+          consumer-properties:
+            key.serializer: org.apache.kafka.common.serialization.StringSerializer
+            value.serializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+            schema.registry.url: http://schema-registry:8081
+            specific.avro.reader: true
+        bindings:
+          chuckProcessor-out-0:
+            binder: kafka
+            destination: chuck
+            producer:
+              useNativeEncoding: true
+              configuration:
+                key.serializer: org.apache.kafka.common.serialization.StringSerializer
+                value.serializer: org.apache.kafka.common.serialization.StringSerializer
