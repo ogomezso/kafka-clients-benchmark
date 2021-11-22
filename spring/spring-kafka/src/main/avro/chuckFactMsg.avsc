@@ -1,7 +1,7 @@
 {
-  "name": "ChuckFact",
+  "name": "ChuckFactMsg",
   "type": "record",
-  "namespace": "org.github.ogomezso.scs.infrastructure.model.chuck",
+  "namespace": "org.github.ogomezso.springkafka.infrastructure.model.chuck",
   "fields": [
     {
       "name": "id",

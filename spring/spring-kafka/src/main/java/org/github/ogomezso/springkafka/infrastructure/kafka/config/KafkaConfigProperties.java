@@ -9,11 +9,10 @@ import lombok.Data;
 @ConfigurationProperties(prefix = "kafka")
 @Data
 public class KafkaConfigProperties {
-
   private String bootstrapServers;
   private String chuckClientId;
   private String chuckTopic;
+  private String chuckAvroClientId;
+  private String chuckAvroTopic;
   private String schemaRegistryUrl;
-  private String ticketClientId;
-  private String ticketTopic;
 }
