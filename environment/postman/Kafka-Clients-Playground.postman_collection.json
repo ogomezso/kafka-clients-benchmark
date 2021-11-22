@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "2e9b3d2a-d1b4-4734-acb3-e41a4df1b0a7",
+		"name": "Kafka-Clients-Playground",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "chuck-scs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:18080/chuck-says",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"chuck-says"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chuck-scs-avro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:18080/chuck-says/avro",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"chuck-says",
+						"avro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chuck-spring",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:28080/chuck-says",
+					"host": [
+						"localhost"
+					],
+					"port": "28080",
+					"path": [
+						"chuck-says"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chuck-spring-avro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:28080/chuck-says/avro",
+					"host": [
+						"localhost"
+					],
+					"port": "28080",
+					"path": [
+						"chuck-says",
+						"avro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
