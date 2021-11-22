@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -22,34 +24,13 @@ public class ChuckController {
   private final FactResponseMapper mapper;
 
   @PostMapping("/chuck-says")
-  ResponseEntity<ChuckFactResponse> sendFact() {
-    try {
-      ChuckFactResponse response = mapper.toResponse(chuckAdapter.sendFact());
-      return ResponseEntity.ok(response);
-    } catch (Exception e) {
-      log.error(e.getMessage());
-      return ResponseEntity.badRequest().body(
-          ChuckFactResponse.builder()
-              .fact("Chuck Destroyed your request")
-              .timestamp(Timestamp.from(Instant.now()).getTime())
-              .build()
-      );
-    }
+  public ChuckFactResponse sendFact() throws JsonProcessingException {
+      return mapper.toResponse(chuckAdapter.sendFact());
+
   }
 
   @PostMapping("/chuck-says/avro")
-  ResponseEntity<ChuckFactResponse> sendAvroFact() {
-    try {
-      ChuckFactResponse response = mapper.toResponse(chuckAdapter.SendAvroFact());
-      return ResponseEntity.ok(response);
-    } catch (Exception e) {
-      log.error(e.getMessage());
-      return ResponseEntity.badRequest().body(
-          ChuckFactResponse.builder()
-              .fact("Chuck Destroyed your request")
-              .timestamp(Timestamp.from(Instant.now()).getTime())
-              .build()
-      );
-    }
+  public ChuckFactResponse sendAvroFact() {
+    return mapper.toResponse(chuckAdapter.SendAvroFact());
   }
 }

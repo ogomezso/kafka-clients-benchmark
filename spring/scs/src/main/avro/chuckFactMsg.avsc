@@ -1,5 +1,5 @@
 {
-  "name": "ChuckFact",
+  "name": "ChuckFactMsg",
   "type": "record",
   "namespace": "org.github.ogomezso.scs.infrastructure.model.chuck",
   "fields": [

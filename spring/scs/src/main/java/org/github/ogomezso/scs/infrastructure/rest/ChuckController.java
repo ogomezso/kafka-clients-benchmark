@@ -1,11 +1,11 @@
 package org.github.ogomezso.scs.infrastructure.rest;
 
-import org.springframework.cloud.stream.function.StreamBridge;
-import org.springframework.http.ResponseEntity;
+import org.github.ogomezso.scs.infrastructure.kafka.ChuckAdapter;
+import org.github.ogomezso.scs.infrastructure.rest.model.ChuckFactResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.javafaker.Faker;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,18 +15,16 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ChuckController {
 
-  private final StreamBridge streamBridge;
-  private final Faker faker = new Faker();
+  private final ChuckAdapter chuckAdapter;
+  private final FactResponseMapper mapper;
 
   @PostMapping("/chuck-says")
-  ResponseEntity<String> sendFact() {
-    String fact = faker.chuckNorris().fact();
-    try {
-      streamBridge.send("chuckProcessor-out-0", fact);
-    } catch (Exception e) {
-      log.error(e.getMessage());
-    }
-    return ResponseEntity.ok("chuckSays:" + fact);
+  public ChuckFactResponse sendFact() throws JsonProcessingException {
+    return mapper.toResponse(chuckAdapter.sendFact());
   }
 
+  @PostMapping("/chuck-says/avro")
+  public ChuckFactResponse sendAvroFact() {
+    return mapper.toResponse(chuckAdapter.SendAvroFact());
+  }
 }

@@ -6,11 +6,16 @@ spring:
   cloud:
     stream:
       function:
-        definition: chuckProcessor
+        definition: chuckProcessor;chuckAvroProcessor
       bindings:
         chuckProcessor-out-0:
           binder: kafka
-          destination: chuck
+          destination: chuck-scs-topic
+          producer:
+            useNativeEncoding: true
+        chuckAvroProcessor-out-0:
+          binder: kafka
+          destination: chuck-scs-avro-topic
           producer:
             useNativeEncoding: true
       default-binder: kafka
