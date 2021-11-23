@@ -179,3 +179,13 @@ services:
       - "18080:18080"
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
+  java-app:
+    container_name: java-app
+    build:
+      context: ../java/java-client
+      dockerfile: Dockerfile
+    image: java-app:latest
+    ports:
+      - "38080:38080"
+    volumes:
+      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
