@@ -131,6 +131,7 @@ scrape_configs:
       - targets:
           - 'spring-app:1234'
           - 'scs-app:1234'
+          - "java-app:1234"
         labels:
           env: 'dev'
 
