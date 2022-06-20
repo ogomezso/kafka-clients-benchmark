@@ -159,33 +159,52 @@ services:
       - "3000:3000"
     volumes:
       - ./monitoring/assets/grafana/provisioning/:/etc/grafana/provisioning
-  spring-app:
-    container_name: spring-app
-    build:
-      context: ../spring/spring-kafka
-      dockerfile: Dockerfile
-    image: spring-app:latest
+  jaeger:
+    image: jaegertracing/all-in-one:1.35
+    container_name: jaeger
+    restart: on-failure
     ports:
-      - "28080:28080"
-    volumes:
-      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
-  scs-app:
-    container_name: scs-app
-    build:
-      context: ../spring/scs
-      dockerfile: Dockerfile
-    image: scs-app:latest
-    ports:
-      - "18080:18080"
-    volumes:
-      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
+      - 6831:6831/udp
+      - 6832:6832/udp 
+      - 5778:5778 
+      - 16686:16686 
+      - 4317:4317 
+      - 4318:4318 
+      - 14250:14250 
+      - 14268:14268 
+      - 14269:14269
+      - 9411:9411
+  # spring-app:
+  #   container_name: spring-app
+  #   build:
+  #     context: ../spring/spring-kafka
+  #     dockerfile: Dockerfile
+  #   image: spring-app:latest
+  #   ports:
+  #     - "28080:28080"
+  #   volumes:
+  #     - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
+  # scs-app:
+  #   container_name: scs-app
+  #   build:
+  #     context: ../spring/scs
+  #     dockerfile: Dockerfile
+  #   image: scs-app:latest
+  #   ports:
+  #     - "18080:18080"
+  #   volumes:
+  #     - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
   java-app:
     container_name: java-app
     build:
-      context: ../java/java-client
+      context: ../java/java-producer
       dockerfile: Dockerfile
     image: java-app:latest
     ports:
       - "38080:38080"
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
+      - ./shared-assets/opentelemetry/:/usr/share/opentelemetry
+    depends_on:
+      - broker
+      - schema-registry
