@@ -194,14 +194,26 @@ services:
   #     - "18080:18080"
   #   volumes:
   #     - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
-  java-app:
-    container_name: java-app
+  java-producer:
+    container_name: java-producer
     build:
       context: ../java/java-producer
       dockerfile: Dockerfile
-    image: java-app:latest
+    image: java-producer:latest
     ports:
       - "38080:38080"
+    volumes:
+      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
+      - ./shared-assets/opentelemetry/:/usr/share/opentelemetry
+    depends_on:
+      - broker
+      - schema-registry
+  java-consumer:
+    container_name: java-consumer
+    build:
+      context: ../java/java-consumer
+      dockerfile: Dockerfile
+    image: java-consumer:latest
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
       - ./shared-assets/opentelemetry/:/usr/share/opentelemetry
