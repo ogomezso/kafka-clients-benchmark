@@ -14,6 +14,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>spring-kafka</name>
   <description>spring-kafka</description>
+  <repositories>
+    <repository>
+        <id>confluent</id>
+        <url>https://packages.confluent.io/maven/</url>
+    </repository>
+</repositories>
   <properties>
     <java.version>11</java.version>
     <avro.version>1.11.0</avro.version>
@@ -70,7 +76,7 @@
     <dependency>
       <groupId>io.confluent</groupId>
       <artifactId>kafka-avro-serializer</artifactId>
-      <version>5.5.0</version>
+      <version>7.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>

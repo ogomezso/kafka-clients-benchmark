@@ -2,9 +2,7 @@
 version: '3.4'
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:6.2.0
-    hostname: zookeeper
-    container_name: zookeeper
+    image: confluentinc/cp-zookeeper:7.1.0 
     ports:
       - "2181:2181"
     environment:
@@ -15,9 +13,7 @@ services:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
 
   broker:
-    image: confluentinc/cp-server:6.2.0
-    hostname: broker
-    container_name: broker
+    image: confluentinc/cp-server:7.1.0 
     depends_on:
       - zookeeper
     ports:
@@ -47,9 +43,7 @@ services:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
 
   schema-registry:
-    image: confluentinc/cp-schema-registry:6.2.0
-    hostname: schema-registry
-    container_name: schema-registry
+    image: confluentinc/cp-schema-registry:7.1.0 
     depends_on:
       - broker
     ports:
@@ -63,9 +57,7 @@ services:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
 
   connect:
-    image: cnfldemos/cp-server-connect-datagen:0.5.0-6.2.0
-    hostname: connect
-    container_name: connect
+    image: cnfldemos/cp-server-connect-datagen:0.5.0-6.2.0 
     depends_on:
       - broker
       - schema-registry
@@ -97,9 +89,7 @@ services:
       EXTRA_ARGS: -javaagent:/usr/share/jmx-exporter/jmx_prometheus_javaagent-0.16.1.jar=1234:/usr/share/jmx-exporter/kafka_connect.yml
 
   control-center:
-    image: confluentinc/cp-enterprise-control-center:6.2.0
-    hostname: control-center
-    container_name: control-center
+    image: confluentinc/cp-enterprise-control-center:7.1.0 
     depends_on:
       - broker
       - schema-registry
@@ -119,25 +109,11 @@ services:
       PORT: 9021
 
   prometheus:
-    image: prom/prometheus:v2.29.2
-    container_name: prometheus
+    image: prom/prometheus:v2.29.2 
     ports:
       - 9090:9090
     volumes:
-      - ./monitoring/assets/prometheus/prometheus-config/:/etc/prometheus
-
-  node-exporter:
-    image: prom/node-exporter:v1.2.2
-    container_name: node-exporter
-    volumes:
-      - /proc:/host/proc:ro
-      - /sys:/host/sys:ro
-      - /:/rootfs:ro
-    command:
-      - "--path.procfs=/host/proc"
-      - "--path.sysfs=/host/sys"
-      - "--collector.filesystem.ignored-mount-points"
-      - "^(aufs|proc|nsfs|shm|cgroup|tmpfs|binfmt_misc|debugfs|devpts|fusectl|hugetlbfs|fuse.lxcfs|mqueue|pstore|securityfs|sysfs|autofs|devtmpfs|configfs)"
+      - ./monitoring/assets/prometheus/prometheus-config/:/etc/prometheus 
 
   kafka-lag-exporter:
     image: lightbend/kafka-lag-exporter:0.6.7
@@ -146,7 +122,7 @@ services:
     restart: always
     volumes:
       - ./shared-assets/kafka-lag-exporter:/opt/docker/conf
-      - ./monitoring/assets/prometheus/security:/etc/kafka/secrets
+      - ./monitoring/assets/prometheus/security:/etc/kafka/secrets 
 
   grafana:
     image: grafana/grafana:8.1.3
@@ -156,36 +132,87 @@ services:
       - "GF_SECURITY_ADMIN_PASSWORD=password"
       - "GF_USERS_ALLOW_SIGN_UP=false"
     ports:
-      - "3000:3000"
+      - "3000:3000" 
     volumes:
       - ./monitoring/assets/grafana/provisioning/:/etc/grafana/provisioning
-  spring-app:
-    container_name: spring-app
+
+  # zipkin
+  zipkin:
+    image: openzipkin/zipkin:latest
+    ports:
+      - "9411:9411"
+
+  # Jaeger
+  jaeger:
+   image: jaegertracing/all-in-one:latest
+   ports:
+     - "16686:16686"
+     - "14268"
+     - "14250"
+
+  # Collector
+  collector:
+   image: otel/opentelemetry-collector:latest
+   volumes:
+     - ./collector/config.yml:/etc/collector-gateway.yaml
+   command: [ "--config=/etc/collector-gateway.yaml" ]
+   ports:
+     - "1888:1888"   # pprof extension
+     - "13133:13133" # health_check extension
+     - "4317:4317"        # OTLP gRPC receiver
+     - "4318:4318"        # OTLP HTTP receiver
+     - "55670:55679" # zpages extension
+   depends_on:
+     - jaeger
+     - zipkin
+
+  spring-app: 
     build:
       context: ../spring/spring-kafka
-      dockerfile: Dockerfile
-    image: spring-app:latest
+      dockerfile: Dockerfile 
+      args: 
+        OTEL_VERSION: 1.15.0 
+        PROMETHEUS_AGENT_VERSION: 0.17.0
+    environment:
+     - APP_NAME=spring-app 
+     - COLLECTOR_ENDPOINT=http://collector:4317
     ports:
       - "28080:28080"
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
-  scs-app:
-    container_name: scs-app
+    depends_on:
+     - collector 
+
+  scs-app: 
     build:
       context: ../spring/scs
-      dockerfile: Dockerfile
-    image: scs-app:latest
+      dockerfile: Dockerfile 
+      args: 
+        OTEL_VERSION: 1.15.0 
+        PROMETHEUS_AGENT_VERSION: 0.17.0
+    environment:
+     - APP_NAME=scs-app 
+     - COLLECTOR_ENDPOINT=http://collector:4317    
     ports:
       - "18080:18080"
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
-  java-app:
-    container_name: java-app
+    depends_on:
+     - collector 
+
+  java-app: 
     build:
       context: ../java/java-client
       dockerfile: Dockerfile
-    image: java-app:latest
+      args: 
+        OTEL_VERSION: 1.15.0 
+        PROMETHEUS_AGENT_VERSION: 0.17.0 
+    environment:
+     - APP_NAME=java-app 
+     - COLLECTOR_ENDPOINT=http://collector:4317   
     ports:
       - "38080:38080"
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
+    depends_on:
+     - collector 
