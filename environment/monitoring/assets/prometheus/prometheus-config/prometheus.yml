@@ -130,15 +130,14 @@ scrape_configs:
     static_configs:
       - targets:
           - 'spring-app:1234'
-          - 'scs-app:1234'
-          - "java-app:1234"
+          - "java-producer:1234"
         labels:
           env: 'dev'
 
   - job_name: 'consumer'
     static_configs:
       - targets:
-          - "consumer:1234"
+          - "java-consumer:1234"
         labels:
           env: 'dev'
 
@@ -159,6 +158,5 @@ scrape_configs:
     static_configs:
       - targets:
           - 'spring-app:28080'
-          - 'scs-app:18080'
         labels:
           env: 'dev'
