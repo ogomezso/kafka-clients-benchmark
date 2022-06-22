@@ -174,6 +174,21 @@ services:
       - 14268:14268 
       - 14269:14269
       - 9411:9411
+  otel-collector:
+    image: otel/opentelemetry-collector:0.53.0
+    container_name: otel
+    command: ["--config=/usr/share/otel-collector/otel-collector-config.yaml", ""]
+    volumes:
+      - ./shared-assets/opentelemetry//otel-collector-config.yaml:/usr/share/otel-collector/otel-collector-config.yaml
+    ports:
+      - "1888:1888"  
+      - "8888:8888"
+      - "8889:8889"
+      - "13133:13133"
+      - "14317:4317"
+      - "55679:55679"
+    depends_on:
+      - jaeger
   # spring-app:
   #   container_name: spring-app
   #   build:

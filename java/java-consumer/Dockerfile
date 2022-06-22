@@ -28,9 +28,9 @@ ENV JAVA_TOOL_OPTIONS "-Dcom.sun.management.jmxremote.ssl=false \
   -javaagent:/usr/share/jmx-exporter/jmx_prometheus_javaagent-0.16.1.jar=1234:/usr/share/jmx-exporter/kafka_client.yml \
   -javaagent:/usr/share/opentelemetry/opentelemetry-javaagent.jar \
      -Dotel.resource.attributes=service.name=java-consumer \
-     -Dotel.metrics.exporter=none \
-     -Dotel.logs.exporter=none \
-     -Dotel.traces.exporter=jaeger \
-     -Dotel.exporter.jaeger.endpoint=http://jaeger:14250"
+     -Dotel.metrics.exporter=otlp \
+     -Dotel.logs.exporter=otlp \
+     -Dotel.traces.exporter=otlp \
+     -Dotel.exporter.otlp.endpoint=http://otel-collector:4317"
 
 CMD ["java", "-jar", "target/java-client-jar-with-dependencies.jar","config/application-docker.yml"]
