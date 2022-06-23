@@ -1,3 +1,12 @@
 /.idea/
-/java/java-client/target/
-/java/java-client/java-client.iml
+**/target/
+*.iml
+**/.classpath
+**/.factorypath
+**/.project
+**/.DS_Store
+**/.settings/
+**/.mvn/
+**/target/
+.vscode/
+spring/spring-kafka/src/main/java/org/github/ogomezso/springkafka/infrastructure/model/chuck/
