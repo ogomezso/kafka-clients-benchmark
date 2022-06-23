@@ -23,7 +23,7 @@
   <properties>
     <java.version>11</java.version>
     <avro.version>1.11.0</avro.version>
-    <micrometer.version>1.8.0</micrometer.version>
+    <micrometer.version>1.9.1</micrometer.version>
   </properties>
   <dependencies>
     <dependency>
