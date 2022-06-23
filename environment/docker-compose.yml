@@ -164,7 +164,7 @@ services:
    depends_on:
      - jaeger
      - zipkin
-
+ #spring app
   spring-app: 
     build:
       context: ../spring/spring-kafka
@@ -180,24 +180,9 @@ services:
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
     depends_on:
-     - collector 
-
-  scs-app: 
-    build:
-      context: ../spring/scs
-      dockerfile: Dockerfile 
-      args: 
-        OTEL_VERSION: 1.15.0 
-        PROMETHEUS_AGENT_VERSION: 0.17.0
-    environment:
-     - APP_NAME=scs-app 
-     - COLLECTOR_ENDPOINT=http://collector:4317    
-    ports:
-      - "38080:38080"
-    volumes:
-      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
-    depends_on:
      - collector  
+ 
+  #java producer
   java-producer: 
     build:
       context: ../java/java-producer
@@ -215,6 +200,8 @@ services:
     depends_on:
       - broker
       - schema-registry
+      - collector  
+  #java consumer
   java-consumer: 
     build:
       context: ../java/java-consumer
@@ -227,3 +214,4 @@ services:
     depends_on:
       - broker
       - schema-registry
+      - collector  
