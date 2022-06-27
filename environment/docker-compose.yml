@@ -191,7 +191,7 @@ services:
         OTEL_VERSION: 1.15.0 
         PROMETHEUS_AGENT_VERSION: 0.17.0
     environment:
-     - APP_NAME=scs-app 
+     - APP_NAME=java-producer 
      - COLLECTOR_ENDPOINT=http://collector:4317    
     ports:
       - "38080:38080"
