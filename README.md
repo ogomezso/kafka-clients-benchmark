@@ -30,6 +30,14 @@ Environment:
  * Java Producer / Consumer sample app 
  * Spring-Kafka app 
 
+- Build apps:
+
+```sh
+docker-compose build
+```
+
+- UP:
+
 ```sh
 docker-compose up -d
 ```
