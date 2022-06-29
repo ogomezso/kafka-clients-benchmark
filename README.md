@@ -22,6 +22,7 @@ Environment:
  * Confluent Kafka
  * Confluent Schema Registry
  * Confluent Connect - Data Generator
+ * Confluent Control Center
  * Prometheus
  * Grafana
  * Jaeger
