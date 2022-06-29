@@ -11,7 +11,9 @@
         "target": {
           "limit": 100,
           "matchAny": false,
-          "tags": [],
+          "tags": [
+            
+          ],
           "type": "dashboard"
         },
         "type": "dashboard"
@@ -21,9 +23,11 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 10,
-  "iteration": 1633460006472,
-  "links": [],
+  "id": 3,
+  "iteration": 1647426501739,
+  "links": [
+    
+  ],
   "panels": [
     {
       "datasource": null,
@@ -61,8 +65,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -78,7 +86,9 @@
           },
           "unit": "Bps"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 12,
@@ -105,9 +115,9 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "kafka_server_produce_byte_rate{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"}",
+          "expr": "topk(10, kafka_server_produce_byte_rate{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"})",
           "interval": "",
-          "legendFormat": "{{ user }} - {{ client_id }} (broker: {{ instance }})",
+          "legendFormat": "User: {{ user }} - Client: {{ client_id }} @ Broker: {{ instance }}",
           "refId": "A"
         }
       ],
@@ -152,8 +162,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -169,7 +183,9 @@
           },
           "unit": "Bps"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 12,
@@ -196,9 +212,9 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "kafka_server_fetch_byte_rate{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"}",
+          "expr": "topk(10, kafka_server_fetch_byte_rate{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"})",
           "interval": "",
-          "legendFormat": "{{ user }} - {{ client_id }} (broker: {{ instance }})",
+          "legendFormat": "User: {{ user }} - Client: {{ client_id }} @ Broker: {{ instance }}",
           "refId": "A"
         }
       ],
@@ -243,8 +259,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -258,9 +278,11 @@
               }
             ]
           },
-          "unit": "percentunit"
+          "unit": "percent"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 12,
@@ -287,9 +309,9 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "kafka_server_request_request_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"}",
+          "expr": "topk(10, kafka_server_request_request_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"})",
           "interval": "",
-          "legendFormat": "{{ user }} - {{ client_id }} (broker: {{ instance }})",
+          "legendFormat": "User: {{ user }} - Client: {{ client_id }} @ Broker: {{ instance }}",
           "refId": "A"
         }
       ],
@@ -334,8 +356,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -349,9 +375,11 @@
               }
             ]
           },
-          "unit": "Bps"
+          "unit": "ms"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 12,
@@ -378,9 +406,9 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "kafka_server_produce_throttle_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"}",
+          "expr": "kafka_server_produce_throttle_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"} > 0",
           "interval": "",
-          "legendFormat": "{{ user }} - {{ client_id }} (broker: {{ instance }})",
+          "legendFormat": "User: {{ user }} - Client: {{ client_id }} @ Broker: {{ instance }}",
           "refId": "A"
         }
       ],
@@ -425,8 +453,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -440,9 +472,11 @@
               }
             ]
           },
-          "unit": "Bps"
+          "unit": "ms"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 12,
@@ -469,9 +503,9 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "kafka_server_fetch_throttle_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"}",
+          "expr": "kafka_server_fetch_throttle_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"} > 0",
           "interval": "",
-          "legendFormat": "{{ user }} - {{ client_id }} (broker: {{ instance }})",
+          "legendFormat": "User: {{ user }} - Client: {{ client_id }} @ Broker: {{ instance }}",
           "refId": "A"
         }
       ],
@@ -516,8 +550,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -533,7 +571,9 @@
           },
           "unit": "ms"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 12,
@@ -560,9 +600,9 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "kafka_server_request_throttle_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"}",
+          "expr": "kafka_server_request_throttle_time{user=~\"$user\",client_id=~\"$client_id\",instance=~\"$broker_id\",env=\"$env\",job=\"kafka-broker\"} > 0",
           "interval": "",
-          "legendFormat": "{{ user }} - {{ client_id }} (broker: {{ instance }})",
+          "legendFormat": "User: {{ user }} - Client: {{ client_id }} @ Broker: {{ instance }}",
           "refId": "A"
         }
       ],
@@ -575,7 +615,9 @@
   "refresh": "1m",
   "schemaVersion": 30,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    
+  ],
   "templating": {
     "list": [
       {
@@ -594,7 +636,9 @@
         "label": "Environment",
         "multi": false,
         "name": "env",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(env)",
           "refId": "Prometheus-env-Variable-Query"
@@ -628,7 +672,9 @@
         "label": "Instance",
         "multi": true,
         "name": "broker_id",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(kafka_server_kafkaserver_brokerstate, instance)",
           "refId": "Prometheus-broker_id-Variable-Query"
@@ -662,7 +708,9 @@
         "label": "User",
         "multi": true,
         "name": "user",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(user)",
           "refId": "Prometheus-user-Variable-Query"
@@ -696,7 +744,9 @@
         "label": "Client Id",
         "multi": true,
         "name": "client_id",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(client_id)",
           "refId": "Prometheus-client_id-Variable-Query"
@@ -732,5 +782,5 @@
   "timezone": "",
   "title": "Kafka Quotas",
   "uid": "cwWEgYqMz",
-  "version": 1
+  "version": 2
 }

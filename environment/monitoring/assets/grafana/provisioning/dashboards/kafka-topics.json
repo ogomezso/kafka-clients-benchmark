@@ -11,7 +11,9 @@
         "target": {
           "limit": 100,
           "matchAny": false,
-          "tags": [],
+          "tags": [
+            
+          ],
           "type": "dashboard"
         },
         "type": "dashboard"
@@ -21,9 +23,11 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 5,
-  "iteration": 1632473080029,
-  "links": [],
+  "id": 4,
+  "iteration": 1647426704713,
+  "links": [
+    
+  ],
   "panels": [
     {
       "collapsed": false,
@@ -35,7 +39,9 @@
         "y": 0
       },
       "id": 19,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "Overview",
       "type": "row"
     },
@@ -43,7 +49,9 @@
       "datasource": null,
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -62,7 +70,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 5,
@@ -83,14 +93,17 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum(kafka_controller_kafkacontroller_globaltopiccount)",
-          "instant": false,
+          "exemplar": true,
+          "expr": "sum(kafka_controller_kafkacontroller_globaltopiccount{job=\"kafka-broker\",env=~\"$env\"})",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -136,7 +149,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -153,7 +168,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 10,
@@ -179,7 +196,8 @@
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum without(instance) (rate(kafka_server_brokertopicmetrics_messagesinpersec{job=\"kafka-broker\",topic=~\"$topic\",env=~\"$env\"}[5m]))",
+          "exemplar": true,
+          "expr": "topk(10, sum without(instance) (rate(kafka_server_brokertopicmetrics_messagesinpersec{job=\"kafka-broker\",topic=~\"$topic\",env=~\"$env\"}[5m])))",
           "interval": "",
           "legendFormat": "{{topic}}",
           "refId": "A"
@@ -225,8 +243,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -242,7 +264,9 @@
           },
           "unit": "bytes"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 10,
@@ -268,7 +292,8 @@
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum(kafka_log_log_size{job=\"kafka-broker\",env=\"$env\",topic=~\"$topic\"}) by (topic)",
+          "exemplar": true,
+          "expr": "topk(10, sum(kafka_log_log_size{job=\"kafka-broker\",env=\"$env\",topic=~\"$topic\"}) by (topic))",
           "interval": "",
           "legendFormat": "{{topic}}",
           "refId": "A"
@@ -283,7 +308,9 @@
       "datasource": null,
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -298,7 +325,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 5,
@@ -319,13 +348,17 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum(kafka_controller_kafkacontroller_globalpartitioncount)",
+          "exemplar": true,
+          "expr": "sum(kafka_controller_kafkacontroller_globalpartitioncount{job=\"kafka-broker\",env=~\"$env\"})",
+          "instant": true,
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -371,7 +404,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -387,7 +422,9 @@
           },
           "unit": "binBps"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 9,
@@ -413,7 +450,8 @@
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum without(instance) (rate(kafka_server_brokertopicmetrics_bytesinpersec{job=\"kafka-broker\",topic=~\"$topic\",env=~\"$env\"}[5m]))",
+          "exemplar": true,
+          "expr": "topk(10, sum without(instance) (rate(kafka_server_brokertopicmetrics_bytesinpersec{job=\"kafka-broker\",topic=~\"$topic\",env=~\"$env\"}[5m])))",
           "interval": "",
           "legendFormat": "{{topic}}",
           "refId": "A"
@@ -459,7 +497,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -475,7 +515,9 @@
           },
           "unit": "binBps"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 9,
@@ -501,7 +543,8 @@
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum without(instance) (rate(kafka_server_brokertopicmetrics_bytesoutpersec{job=\"kafka-broker\",topic=~\"$topic\",env=~\"$env\"}[5m]))",
+          "exemplar": true,
+          "expr": "topk(10, sum without(instance) (rate(kafka_server_brokertopicmetrics_bytesoutpersec{job=\"kafka-broker\",topic=~\"$topic\",env=~\"$env\"}[5m])))",
           "interval": "",
           "legendFormat": "{{topic}}",
           "refId": "A"
@@ -548,8 +591,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -565,7 +612,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -591,7 +640,8 @@
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum(rate(kafka_server_brokertopicmetrics_totalproducerequestspersec{job=\"kafka-broker\", env=\"$env\", topic=~\"$topic\"}[5m])) by (topic)",
+          "exemplar": true,
+          "expr": "topk(10, sum(rate(kafka_server_brokertopicmetrics_totalproducerequestspersec{job=\"kafka-broker\", env=\"$env\", topic=~\"$topic\"}[5m])) by (topic))",
           "interval": "",
           "legendFormat": "{{topic}}",
           "refId": "A"
@@ -638,8 +688,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -655,7 +709,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -681,7 +737,8 @@
       "pluginVersion": "8.1.3",
       "targets": [
         {
-          "expr": "sum(rate(kafka_server_brokertopicmetrics_totalfetchrequestspersec{job=\"kafka-broker\", env=\"$env\",topic=~\"$topic\"}[5m])) by (topic)",
+          "exemplar": true,
+          "expr": "topk(10, sum(rate(kafka_server_brokertopicmetrics_totalfetchrequestspersec{job=\"kafka-broker\", env=\"$env\",topic=~\"$topic\"}[5m])) by (topic))",
           "interval": "",
           "legendFormat": "{{topic}}",
           "refId": "A"
@@ -713,7 +770,9 @@
                 "displayMode": "auto",
                 "filterable": false
               },
-              "mappings": [],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -749,7 +808,31 @@
                 "properties": [
                   {
                     "id": "custom.width",
-                    "value": 226
+                    "value": 137
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "instance"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 155
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "topic"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 294
                   }
                 ]
               }
@@ -774,7 +857,8 @@
           "pluginVersion": "8.1.3",
           "targets": [
             {
-              "expr": "kafka_log_log_logstartoffset{job=\"kafka-broker\",env=~\"$env\",topic=~\"$topic\"}",
+              "exemplar": true,
+              "expr": "kafka_log_log_logstartoffset{job=\"kafka-broker\",env=~\"$env\",topic=\"$topic\"}",
               "format": "table",
               "instant": true,
               "interval": "",
@@ -824,7 +908,9 @@
                 "displayMode": "auto",
                 "filterable": false
               },
-              "mappings": [],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -860,7 +946,19 @@
                 "properties": [
                   {
                     "id": "custom.width",
-                    "value": 226
+                    "value": 105
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "topic"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 289
                   }
                 ]
               }
@@ -885,7 +983,8 @@
           "pluginVersion": "8.1.3",
           "targets": [
             {
-              "expr": "kafka_log_log_logendoffset{job=\"kafka-broker\",env=~\"$env\",topic=~\"$topic\"}",
+              "exemplar": true,
+              "expr": "kafka_log_log_logendoffset{job=\"kafka-broker\",env=~\"$env\",topic=\"$topic\"}",
               "format": "table",
               "instant": true,
               "interval": "",
@@ -933,7 +1032,9 @@
   "refresh": "1m",
   "schemaVersion": 30,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    
+  ],
   "templating": {
     "list": [
       {
@@ -952,7 +1053,9 @@
         "label": "Environment",
         "multi": false,
         "name": "env",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(env)",
           "refId": "Prometheus-env-Variable-Query"
@@ -986,7 +1089,9 @@
         "label": "Topic name",
         "multi": true,
         "name": "topic",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(kafka_log_log_size,topic)",
           "refId": "Prometheus-topic-Variable-Query"
@@ -1006,9 +1111,11 @@
     "from": "now-12h",
     "to": "now"
   },
-  "timepicker": {},
+  "timepicker": {
+    
+  },
   "timezone": "",
   "title": "Kafka Topics",
   "uid": "vQT4b1-Mz",
-  "version": 6
+  "version": 1
 }

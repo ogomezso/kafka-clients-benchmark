@@ -11,7 +11,9 @@
         "target": {
           "limit": 100,
           "matchAny": false,
-          "tags": [],
+          "tags": [
+            
+          ],
           "type": "dashboard"
         },
         "type": "dashboard"
@@ -24,7 +26,9 @@
   "graphTooltip": 0,
   "id": 5,
   "iteration": 1632255569594,
-  "links": [],
+  "links": [
+    
+  ],
   "panels": [
     {
       "collapsed": false,
@@ -36,7 +40,9 @@
         "y": 0
       },
       "id": 199,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "General",
       "type": "row"
     },
@@ -45,7 +51,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -57,7 +65,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 3,
@@ -78,7 +88,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -101,7 +113,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -113,7 +127,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 3,
@@ -134,7 +150,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -157,7 +175,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -173,7 +193,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 3,
@@ -194,7 +216,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -210,7 +234,9 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Tasks Paused",
-      "transformations": [],
+      "transformations": [
+        
+      ],
       "type": "stat"
     },
     {
@@ -218,7 +244,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -234,7 +262,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 3,
@@ -255,7 +285,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -271,7 +303,9 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Tasks Failed",
-      "transformations": [],
+      "transformations": [
+        
+      ],
       "type": "stat"
     },
     {
@@ -279,7 +313,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -295,7 +331,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 3,
@@ -316,7 +354,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -332,7 +372,9 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Tasks Unassigned",
-      "transformations": [],
+      "transformations": [
+        
+      ],
       "type": "stat"
     },
     {
@@ -340,7 +382,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -356,7 +400,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 3,
@@ -377,7 +423,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -393,7 +441,9 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Tasks Destroyed",
-      "transformations": [],
+      "transformations": [
+        
+      ],
       "type": "stat"
     },
     {
@@ -413,7 +463,9 @@
             }
           },
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "unit": "short"
         },
         "overrides": [
@@ -457,11 +509,15 @@
       },
       "id": 227,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 1,
       "options": {
         "legend": {
-          "calcs": [],
+          "calcs": [
+            
+          ],
           "displayMode": "table",
           "placement": "right",
           "values": [
@@ -527,7 +583,9 @@
             }
           },
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "unit": "short"
         },
         "overrides": [
@@ -601,11 +659,15 @@
       },
       "id": 219,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 1,
       "options": {
         "legend": {
-          "calcs": [],
+          "calcs": [
+            
+          ],
           "displayMode": "table",
           "placement": "right",
           "values": [
@@ -705,8 +767,12 @@
             }
           },
           "decimals": 0,
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -793,7 +859,9 @@
         "y": 11
       },
       "id": 228,
-      "links": [],
+      "links": [
+        
+      ],
       "options": {
         "legend": {
           "calcs": [
@@ -861,8 +929,12 @@
             }
           },
           "decimals": 0,
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -964,7 +1036,9 @@
         "y": 11
       },
       "id": 226,
-      "links": [],
+      "links": [
+        
+      ],
       "options": {
         "legend": {
           "calcs": [
@@ -1045,7 +1119,9 @@
         "y": 17
       },
       "id": 221,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "System",
       "type": "row"
     },
@@ -1084,8 +1160,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -1101,7 +1181,9 @@
           },
           "unit": "percent"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -1174,8 +1256,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -1191,7 +1277,9 @@
           },
           "unit": "bytes"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -1270,8 +1358,12 @@
             }
           },
           "decimals": 2,
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -1288,7 +1380,9 @@
           },
           "unit": "percentunit"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -1337,7 +1431,9 @@
       "id": 97,
       "panels": [
         {
-          "columns": [],
+          "columns": [
+            
+          ],
           "datasource": "Prometheus",
           "fontSize": "90%",
           "gridPos": {
@@ -1367,7 +1463,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Time",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1384,7 +1482,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "__name__",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1401,7 +1501,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "env",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1418,7 +1520,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "instance",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "string",
               "unit": "short"
             },
@@ -1435,7 +1539,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "job",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1452,7 +1558,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "client_id",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1469,7 +1577,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "start_time_ms",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "date",
               "unit": "short"
             },
@@ -1486,7 +1596,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Value #B",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1503,7 +1615,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Value #A",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -1520,7 +1634,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #C",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1537,7 +1653,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #D",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1554,7 +1672,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #E",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1571,7 +1691,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #F",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1588,7 +1710,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #G",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "ms",
               "valueMaps": [
@@ -1615,7 +1739,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #H",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "ms"
             },
@@ -1632,7 +1758,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "instance",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1649,7 +1777,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #I",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1666,7 +1796,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1683,7 +1815,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #J",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1700,7 +1834,9 @@
               "decimals": 0,
               "mappingType": 1,
               "pattern": "Value #K",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -1715,7 +1851,9 @@
               ],
               "decimals": 2,
               "pattern": "/.*/",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             }
@@ -1795,7 +1933,9 @@
           "type": "table-old"
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -1803,9 +1943,13 @@
           "description": "Average number of network operations (reads or writes) on all connections per second",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -1828,7 +1972,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -1838,7 +1984,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -1853,9 +2001,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Network IO Rate",
           "tooltip": {
@@ -1869,7 +2021,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -1895,7 +2049,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -1903,9 +2059,13 @@
           "description": "Bytes per second read off all sockets",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -1928,7 +2088,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -1938,7 +2100,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -1952,9 +2116,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Incoming Byte Rate",
           "tooltip": {
@@ -1968,7 +2136,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -1994,7 +2164,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2002,9 +2174,13 @@
           "description": "Average number of outgoing bytes sent per second to all servers",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2027,7 +2203,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2037,7 +2215,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2051,9 +2231,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Outgoing Byte Rate",
           "tooltip": {
@@ -2067,7 +2251,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2093,7 +2279,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2101,9 +2289,13 @@
           "description": "Current number of active connections",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2126,7 +2318,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2136,7 +2330,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2151,9 +2347,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Current number of active connections",
           "tooltip": {
@@ -2167,7 +2367,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2194,7 +2396,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2202,9 +2406,13 @@
           "description": "Connections that failed authentication",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2227,7 +2435,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2237,7 +2447,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2252,9 +2464,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Failed authentication connections",
           "tooltip": {
@@ -2268,7 +2484,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2295,7 +2513,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2303,9 +2523,13 @@
           "description": "Connections that were successfully authenticated using SASL or SSL",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2328,7 +2552,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2338,7 +2564,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2353,9 +2581,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Success authentication connections",
           "tooltip": {
@@ -2369,7 +2601,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2396,7 +2630,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2404,9 +2640,13 @@
           "description": "Average number of requests sent per second",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2429,7 +2669,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2439,7 +2681,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2453,9 +2697,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Average number of requests",
           "tooltip": {
@@ -2469,7 +2717,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2495,7 +2745,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2503,9 +2755,13 @@
           "description": "Responses received and sent per second",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2528,7 +2784,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2538,7 +2796,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2552,9 +2812,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "Responses received and sent",
           "tooltip": {
@@ -2568,7 +2832,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2594,7 +2860,9 @@
           }
         },
         {
-          "aliasColors": {},
+          "aliasColors": {
+            
+          },
           "bars": false,
           "dashLength": 10,
           "dashes": false,
@@ -2602,9 +2870,13 @@
           "description": "Fraction of time the I/O thread spent doing I/O",
           "fieldConfig": {
             "defaults": {
-              "links": []
+              "links": [
+                
+              ]
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "fill": 1,
           "fillGradient": 0,
@@ -2627,7 +2899,9 @@
           },
           "lines": true,
           "linewidth": 1,
-          "links": [],
+          "links": [
+            
+          ],
           "nullPointMode": "null",
           "options": {
             "alertThreshold": true
@@ -2637,7 +2911,9 @@
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
-          "seriesOverrides": [],
+          "seriesOverrides": [
+            
+          ],
           "spaceLength": 10,
           "stack": false,
           "steppedLine": false,
@@ -2651,9 +2927,13 @@
               "refId": "A"
             }
           ],
-          "thresholds": [],
+          "thresholds": [
+            
+          ],
           "timeFrom": null,
-          "timeRegions": [],
+          "timeRegions": [
+            
+          ],
           "timeShift": null,
           "title": "IO Ratio",
           "tooltip": {
@@ -2667,7 +2947,9 @@
             "mode": "time",
             "name": null,
             "show": true,
-            "values": []
+            "values": [
+              
+            ]
           },
           "yaxes": [
             {
@@ -2708,7 +2990,9 @@
       "id": 132,
       "panels": [
         {
-          "columns": [],
+          "columns": [
+            
+          ],
           "datasource": "Prometheus",
           "fontSize": "110%",
           "gridPos": {
@@ -2738,7 +3022,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Time",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2755,7 +3041,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "__name__",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2773,10 +3061,14 @@
               "mappingType": 1,
               "pattern": "connector_class",
               "preserveFormat": false,
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "string",
               "unit": "short",
-              "valueMaps": []
+              "valueMaps": [
+                
+              ]
             },
             {
               "alias": "",
@@ -2791,7 +3083,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "env",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2808,7 +3102,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "instance",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2825,7 +3121,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "job",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2862,7 +3160,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Value #A",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2879,7 +3179,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Value #C",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2896,7 +3198,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Value #D",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -2946,7 +3250,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "connector",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -2963,7 +3269,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "connector_type",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "string",
               "unit": "short"
             },
@@ -2980,7 +3288,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "connector_version",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             },
@@ -3089,7 +3399,9 @@
               "decimals": 2,
               "mappingType": 1,
               "pattern": "Value #I",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "hidden",
               "unit": "short"
             },
@@ -3123,7 +3435,9 @@
               ],
               "decimals": 2,
               "pattern": "/.*/",
-              "thresholds": [],
+              "thresholds": [
+                
+              ],
               "type": "number",
               "unit": "short"
             }
@@ -3217,7 +3531,9 @@
           "timeShift": null,
           "title": "Connectors",
           "transform": "table",
-          "transformations": [],
+          "transformations": [
+            
+          ],
           "type": "table-old"
         }
       ],
@@ -3271,8 +3587,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -3289,7 +3609,9 @@
               },
               "unit": "ms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 8,
@@ -3298,7 +3620,9 @@
             "y": 29
           },
           "id": 209,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -3360,7 +3684,9 @@
               },
               "unit": "clockms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 4,
@@ -3370,7 +3696,9 @@
           },
           "id": 230,
           "interval": null,
-          "links": [],
+          "links": [
+            
+          ],
           "maxDataPoints": 100,
           "options": {
             "colorMode": "value",
@@ -3389,7 +3717,9 @@
               "fields": "",
               "values": false
             },
-            "text": {},
+            "text": {
+              
+            },
             "textMode": "auto"
           },
           "pluginVersion": "8.1.3",
@@ -3459,8 +3789,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -3476,7 +3810,9 @@
               },
               "unit": "decbytes"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -3485,7 +3821,9 @@
             "y": 30
           },
           "id": 113,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -3552,8 +3890,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -3569,7 +3911,9 @@
               },
               "unit": "decbytes"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -3578,7 +3922,9 @@
             "y": 30
           },
           "id": 114,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -3645,8 +3991,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "max": 1,
               "min": 0,
               "thresholds": {
@@ -3664,7 +4014,9 @@
               },
               "unit": "percentunit"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -3673,7 +4025,9 @@
             "y": 37
           },
           "id": 115,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -3740,8 +4094,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -3757,7 +4115,9 @@
               },
               "unit": "ms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -3766,7 +4126,9 @@
             "y": 37
           },
           "id": 116,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -3833,8 +4195,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "max": 1,
               "min": 0,
               "thresholds": {
@@ -3852,7 +4218,9 @@
               },
               "unit": "percentunit"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -3861,7 +4229,9 @@
             "y": 44
           },
           "id": 117,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -3945,8 +4315,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -3963,7 +4337,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -3972,7 +4348,9 @@
             "y": 31
           },
           "id": 203,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4040,8 +4418,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -4058,7 +4440,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4067,7 +4451,9 @@
             "y": 31
           },
           "id": 205,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4135,8 +4521,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -4153,7 +4543,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4162,7 +4554,9 @@
             "y": 31
           },
           "id": 206,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4230,8 +4624,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -4248,7 +4646,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4257,7 +4657,9 @@
             "y": 38
           },
           "id": 208,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4325,8 +4727,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -4343,7 +4749,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4352,7 +4760,9 @@
             "y": 38
           },
           "id": 207,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4420,8 +4830,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -4438,7 +4852,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4447,7 +4863,9 @@
             "y": 45
           },
           "id": 202,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4515,8 +4933,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "min": 0,
               "thresholds": {
                 "mode": "absolute",
@@ -4533,7 +4955,9 @@
               },
               "unit": "none"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4542,7 +4966,9 @@
             "y": 45
           },
           "id": 204,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4624,8 +5050,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -4641,7 +5071,9 @@
               },
               "unit": "ms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4650,7 +5082,9 @@
             "y": 32
           },
           "id": 140,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4718,8 +5152,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -4735,7 +5173,9 @@
               },
               "unit": "ms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4744,7 +5184,9 @@
             "y": 32
           },
           "id": 141,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4813,8 +5255,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -4830,7 +5276,9 @@
               },
               "unit": "ops"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4839,7 +5287,9 @@
             "y": 39
           },
           "id": 144,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -4907,8 +5357,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -4924,7 +5378,9 @@
               },
               "unit": "short"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -4933,7 +5389,9 @@
             "y": 39
           },
           "id": 143,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -5001,8 +5459,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -5018,7 +5480,9 @@
               },
               "unit": "short"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -5027,7 +5491,9 @@
             "y": 46
           },
           "id": 142,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -5095,8 +5561,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -5112,7 +5582,9 @@
               },
               "unit": "short"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -5121,7 +5593,9 @@
             "y": 46
           },
           "id": 145,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
               "calcs": [
@@ -5205,8 +5679,12 @@
                 }
               },
               "decimals": 0,
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -5222,7 +5700,9 @@
               },
               "unit": "short"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -5231,10 +5711,14 @@
             "y": 33
           },
           "id": 135,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                
+              ],
               "displayMode": "list",
               "placement": "bottom"
             },
@@ -5295,8 +5779,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -5312,7 +5800,9 @@
               },
               "unit": "ms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -5321,10 +5811,14 @@
             "y": 33
           },
           "id": 136,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                
+              ],
               "displayMode": "list",
               "placement": "bottom"
             },
@@ -5386,8 +5880,12 @@
                   "mode": "off"
                 }
               },
-              "links": [],
-              "mappings": [],
+              "links": [
+                
+              ],
+              "mappings": [
+                
+              ],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -5403,7 +5901,9 @@
               },
               "unit": "ms"
             },
-            "overrides": []
+            "overrides": [
+              
+            ]
           },
           "gridPos": {
             "h": 7,
@@ -5412,10 +5912,14 @@
             "y": 33
           },
           "id": 137,
-          "links": [],
+          "links": [
+            
+          ],
           "options": {
             "legend": {
-              "calcs": [],
+              "calcs": [
+                
+              ],
               "displayMode": "list",
               "placement": "bottom"
             },
@@ -5449,7 +5953,9 @@
   "refresh": "1m",
   "schemaVersion": 30,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    
+  ],
   "templating": {
     "list": [
       {
@@ -5468,7 +5974,9 @@
         "label": "Environment",
         "multi": false,
         "name": "env",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(env)",
           "refId": "Prometheus-env-Variable-Query"
@@ -5502,7 +6010,9 @@
         "label": "Cluster ID",
         "multi": true,
         "name": "kafka_connect_cluster_id",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(kafka_connect_cluster_id)",
           "refId": "StandardVariableQuery"
@@ -5532,7 +6042,9 @@
         "label": "Instance",
         "multi": false,
         "name": "instance",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(kafka_connect_app_info{job=\"kafka-connect\", env=\"$env\",kafka_connect_cluster_id=~\"$kafka_connect_cluster_id\"},instance)",
           "refId": "Prometheus-instance-Variable-Query"
@@ -5566,7 +6078,9 @@
         "label": "Connector name",
         "multi": true,
         "name": "connector",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(kafka_connect_connector_task_metrics_pause_ratio{job=\"kafka-connect\", env=\"$env\",kafka_connect_cluster_id=~\"$kafka_connect_cluster_id\"},connector)",
           "refId": "Prometheus-connector-Variable-Query"

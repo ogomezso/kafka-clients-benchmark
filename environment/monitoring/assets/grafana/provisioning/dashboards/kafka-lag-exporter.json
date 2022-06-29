@@ -47,7 +47,9 @@
 	"graphTooltip": 0,
 	"id": null,
 	"iteration": 1556312150750,
-	"links": [],
+	"links": [
+	  
+	],
 	"panels": [
 	  {
 		"collapsed": false,
@@ -58,13 +60,17 @@
 		  "y": 0
 		},
 		"id": 28,
-		"panels": [],
+		"panels": [
+		  
+		],
 		"repeat": null,
 		"title": "All Consumer Group Lag",
 		"type": "row"
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -89,13 +95,17 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
 		"points": false,
 		"renderer": "flot",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -109,7 +119,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "Consumer Group Max Lag Seconds",
@@ -124,7 +136,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -150,7 +164,9 @@
 		}
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -175,13 +191,17 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
 		"points": false,
 		"renderer": "flot",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -195,7 +215,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "Consumer Group Lag Partition Seconds",
@@ -210,7 +232,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -236,7 +260,9 @@
 		}
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -261,7 +287,9 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
@@ -269,7 +297,9 @@
 		"renderer": "flot",
 		"repeat": null,
 		"repeatDirection": "h",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -283,7 +313,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "Consumer Group Max Lag Offsets",
@@ -298,7 +330,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -324,7 +358,9 @@
 		}
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -349,13 +385,17 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
 		"points": false,
 		"renderer": "flot",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -369,7 +409,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "Consumer Group Lag Partition Offsets",
@@ -384,7 +426,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -418,12 +462,16 @@
 		  "y": 21
 		},
 		"id": 149,
-		"panels": [],
+		"panels": [
+		  
+		],
 		"title": "Consumer Group Lag In Time Per Group Over Offset Lag",
 		"type": "row"
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -448,7 +496,9 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"minSpan": 8,
 		"nullPointMode": "null",
 		"percentage": false,
@@ -492,7 +542,9 @@
 			"refId": "B"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "$consumer_group",
@@ -508,7 +560,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -542,12 +596,16 @@
 		  "y": 30
 		},
 		"id": 106,
-		"panels": [],
+		"panels": [
+		  
+		],
 		"title": "Consumer Group Lag in Time Per Group Over Summed Offsets",
 		"type": "row"
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -572,7 +630,9 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"minSpan": 8,
 		"nullPointMode": "null",
 		"percentage": false,
@@ -624,7 +684,9 @@
 			"refId": "C"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "$consumer_group",
@@ -640,7 +702,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -674,12 +738,16 @@
 		  "y": 39
 		},
 		"id": 101,
-		"panels": [],
+		"panels": [
+		  
+		],
 		"title": "Kafka Lag Exporter JVM Metrics",
 		"type": "row"
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -703,13 +771,17 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
 		"points": false,
 		"renderer": "flot",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -722,7 +794,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "JVM Memory Used",
@@ -737,7 +811,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -763,7 +839,9 @@
 		}
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -787,13 +865,17 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
 		"points": false,
 		"renderer": "flot",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -806,7 +888,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "JVM GC Time",
@@ -821,7 +905,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -847,7 +933,9 @@
 		}
 	  },
 	  {
-		"aliasColors": {},
+		"aliasColors": {
+		  
+		},
 		"bars": false,
 		"dashLength": 10,
 		"dashes": false,
@@ -871,13 +959,17 @@
 		},
 		"lines": true,
 		"linewidth": 1,
-		"links": [],
+		"links": [
+		  
+		],
 		"nullPointMode": "null",
 		"percentage": false,
 		"pointradius": 5,
 		"points": false,
 		"renderer": "flot",
-		"seriesOverrides": [],
+		"seriesOverrides": [
+		  
+		],
 		"spaceLength": 10,
 		"stack": false,
 		"steppedLine": false,
@@ -890,7 +982,9 @@
 			"refId": "A"
 		  }
 		],
-		"thresholds": [],
+		"thresholds": [
+		  
+		],
 		"timeFrom": null,
 		"timeShift": null,
 		"title": "JVM GC Rate",
@@ -905,7 +999,9 @@
 		  "mode": "time",
 		  "name": null,
 		  "show": true,
-		  "values": []
+		  "values": [
+			
+		  ]
 		},
 		"yaxes": [
 		  {
@@ -934,68 +1030,88 @@
 	"refresh": "10s",
 	"schemaVersion": 16,
 	"style": "dark",
-	"tags": [],
+	"tags": [
+	  
+	],
 	"templating": {
 	  "list": [
 		{
 		  "allValue": null,
-		  "current": {},
+		  "current": {
+			
+		  },
 		  "datasource": "Prometheus",
 		  "hide": 0,
 		  "includeAll": false,
 		  "label": "Namespace",
 		  "multi": false,
 		  "name": "namespace",
-		  "options": [],
+		  "options": [
+			
+		  ],
 		  "query": "query_result(kafka_consumergroup_group_lag)",
 		  "refresh": 1,
 		  "regex": "/.*namespace=\"([^\"]*).*/",
 		  "skipUrlSync": false,
 		  "sort": 1,
 		  "tagValuesQuery": "",
-		  "tags": [],
+		  "tags": [
+			
+		  ],
 		  "tagsQuery": "",
 		  "type": "query",
 		  "useTags": false
 		},
 		{
 		  "allValue": null,
-		  "current": {},
+		  "current": {
+			
+		  },
 		  "datasource": "Prometheus",
 		  "hide": 0,
 		  "includeAll": false,
 		  "label": "Cluster Name",
 		  "multi": false,
 		  "name": "cluster_name",
-		  "options": [],
+		  "options": [
+			
+		  ],
 		  "query": "query_result(kafka_consumergroup_group_lag{namespace=\"$namespace\"})",
 		  "refresh": 1,
 		  "regex": "/.*cluster_name=\"([^\"]*).*/",
 		  "skipUrlSync": false,
 		  "sort": 1,
 		  "tagValuesQuery": "",
-		  "tags": [],
+		  "tags": [
+			
+		  ],
 		  "tagsQuery": "",
 		  "type": "query",
 		  "useTags": false
 		},
 		{
 		  "allValue": ".*",
-		  "current": {},
+		  "current": {
+			
+		  },
 		  "datasource": "Prometheus",
 		  "hide": 0,
 		  "includeAll": true,
 		  "label": "Consumer Group",
 		  "multi": true,
 		  "name": "consumer_group",
-		  "options": [],
+		  "options": [
+			
+		  ],
 		  "query": "query_result(kafka_consumergroup_group_lag{namespace=\"$namespace\",cluster_name=\"$cluster_name\"})",
 		  "refresh": 1,
 		  "regex": "/.*group=\"([^\"]*).*/",
 		  "skipUrlSync": false,
 		  "sort": 1,
 		  "tagValuesQuery": "",
-		  "tags": [],
+		  "tags": [
+			
+		  ],
 		  "tagsQuery": "",
 		  "type": "query",
 		  "useTags": false
