@@ -11,7 +11,9 @@
         "target": {
           "limit": 100,
           "matchAny": false,
-          "tags": [],
+          "tags": [
+            
+          ],
           "type": "dashboard"
         },
         "type": "dashboard"
@@ -23,7 +25,9 @@
   "graphTooltip": 0,
   "id": 3,
   "iteration": 1634040033398,
-  "links": [],
+  "links": [
+    
+  ],
   "panels": [
     {
       "collapsed": false,
@@ -35,7 +39,9 @@
         "y": 0
       },
       "id": 35,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "Zookeeper",
       "type": "row"
     },
@@ -78,7 +84,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -88,7 +96,9 @@
       },
       "id": 16,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -102,7 +112,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -150,7 +162,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -160,7 +174,9 @@
       },
       "id": 18,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -174,7 +190,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -230,7 +248,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -240,7 +260,9 @@
       },
       "id": 20,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -254,7 +276,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -310,7 +334,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -320,7 +346,9 @@
       },
       "id": 22,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -334,7 +362,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -390,7 +420,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -400,7 +432,9 @@
       },
       "id": 24,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -414,7 +448,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -443,7 +479,9 @@
         "y": 5
       },
       "id": 4,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "Kafka Cluster",
       "type": "row"
     },
@@ -482,7 +520,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -492,7 +532,9 @@
       },
       "id": 2,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -506,7 +548,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "value_and_name"
       },
       "pluginVersion": "8.1.3",
@@ -564,7 +608,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -574,7 +620,9 @@
       },
       "id": 6,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -588,7 +636,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -648,7 +698,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -658,7 +710,9 @@
       },
       "id": 8,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -672,7 +726,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -730,7 +786,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -740,7 +798,9 @@
       },
       "id": 10,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -754,7 +814,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -813,7 +875,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -823,7 +887,9 @@
       },
       "id": 12,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -837,7 +903,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -896,7 +964,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -906,7 +976,9 @@
       },
       "id": 14,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -920,7 +992,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -949,7 +1023,9 @@
         "y": 10
       },
       "id": 26,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "Shema Registry",
       "type": "row"
     },
@@ -957,7 +1033,9 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -972,7 +1050,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -993,7 +1073,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1016,7 +1098,9 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -1027,7 +1111,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1048,7 +1134,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1071,7 +1159,9 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -1082,7 +1172,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1103,7 +1195,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1132,7 +1226,9 @@
         "y": 15
       },
       "id": 37,
-      "panels": [],
+      "panels": [
+        
+      ],
       "repeat": "cluster",
       "title": "Kafka Connect ($kafka_connect_cluster_id) ",
       "type": "row"
@@ -1142,7 +1238,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -1154,7 +1252,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1175,7 +1275,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1199,7 +1301,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -1211,7 +1315,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1232,7 +1338,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1256,7 +1364,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -1268,7 +1378,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1289,7 +1401,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1313,7 +1427,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -1329,7 +1445,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1350,7 +1468,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1366,7 +1486,9 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Tasks Paused",
-      "transformations": [],
+      "transformations": [
+        
+      ],
       "type": "stat"
     },
     {
@@ -1374,7 +1496,9 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -1390,7 +1514,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1411,7 +1537,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1427,7 +1555,9 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Tasks Failed",
-      "transformations": [],
+      "transformations": [
+        
+      ],
       "type": "stat"
     },
     {
@@ -1459,7 +1589,9 @@
           },
           "unit": "clockms"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1469,7 +1601,9 @@
       },
       "id": 47,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1488,7 +1622,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1518,7 +1654,9 @@
         "y": 20
       },
       "id": 52,
-      "panels": [],
+      "panels": [
+        
+      ],
       "repeat": "clusterid",
       "title": "ksqlDB Cluster ($ksqldb_cluster_id) ",
       "type": "row"
@@ -1559,7 +1697,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1569,7 +1709,9 @@
       },
       "id": 50,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1583,7 +1725,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1638,7 +1782,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1648,7 +1794,9 @@
       },
       "id": 53,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1662,7 +1810,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1717,7 +1867,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1727,7 +1879,9 @@
       },
       "id": 55,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1741,7 +1895,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1795,7 +1951,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1805,7 +1963,9 @@
       },
       "id": 57,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1819,7 +1979,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1873,7 +2035,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1883,7 +2047,9 @@
       },
       "id": 59,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1897,7 +2063,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1951,7 +2119,9 @@
           },
           "unit": "none"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -1961,7 +2131,9 @@
       },
       "id": 61,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "maxDataPoints": 100,
       "options": {
         "colorMode": "value",
@@ -1975,7 +2147,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -1997,7 +2171,9 @@
   "refresh": "1m",
   "schemaVersion": 30,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    
+  ],
   "templating": {
     "list": [
       {
@@ -2016,7 +2192,9 @@
         "label": "Environment",
         "multi": false,
         "name": "env",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(env)",
           "refId": "StandardVariableQuery"
@@ -2044,7 +2222,9 @@
         "label": "Kafka Connect Cluster ID",
         "multi": false,
         "name": "kafka_connect_cluster_id",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(kafka_connect_cluster_id)",
           "refId": "StandardVariableQuery"
@@ -2072,7 +2252,9 @@
         "label": "ksqlDB Cluster ID",
         "multi": false,
         "name": "ksqldb_cluster_id",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(ksql_ksql_engine_query_stats_liveness_indicator,ksql_cluster)",
           "refId": "StandardVariableQuery"
@@ -2089,7 +2271,9 @@
     "from": "now-12h",
     "to": "now"
   },
-  "timepicker": {},
+  "timepicker": {
+    
+  },
   "timezone": "",
   "title": "Confluent Platform overview",
   "uid": "JiqnBMNnz",

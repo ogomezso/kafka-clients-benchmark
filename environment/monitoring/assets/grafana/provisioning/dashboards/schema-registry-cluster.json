@@ -11,7 +11,9 @@
         "target": {
           "limit": 100,
           "matchAny": false,
-          "tags": [],
+          "tags": [
+            
+          ],
           "type": "dashboard"
         },
         "type": "dashboard"
@@ -23,7 +25,9 @@
   "graphTooltip": 0,
   "id": 4,
   "iteration": 1632254298743,
-  "links": [],
+  "links": [
+    
+  ],
   "panels": [
     {
       "collapsed": false,
@@ -35,7 +39,9 @@
         "y": 0
       },
       "id": 19,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "Schemas",
       "type": "row"
     },
@@ -43,7 +49,9 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -58,7 +66,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -79,7 +89,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -133,7 +145,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -149,7 +163,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -201,10 +217,14 @@
             }
           },
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -214,10 +234,14 @@
       },
       "id": 8,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "options": {
         "legend": {
-          "calcs": [],
+          "calcs": [
+            
+          ],
           "displayMode": "table",
           "placement": "bottom",
           "values": [
@@ -268,10 +292,14 @@
             }
           },
           "decimals": 0,
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -281,10 +309,14 @@
       },
       "id": 9,
       "interval": null,
-      "links": [],
+      "links": [
+        
+      ],
       "options": {
         "legend": {
-          "calcs": [],
+          "calcs": [
+            
+          ],
           "displayMode": "table",
           "placement": "bottom",
           "values": [
@@ -323,7 +355,9 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -334,7 +368,9 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 4,
@@ -355,7 +391,9 @@
           "fields": "",
           "values": false
         },
-        "text": {},
+        "text": {
+          
+        },
         "textMode": "auto"
       },
       "pluginVersion": "8.1.3",
@@ -384,7 +422,9 @@
         "y": 9
       },
       "id": 15,
-      "panels": [],
+      "panels": [
+        
+      ],
       "title": "System",
       "type": "row"
     },
@@ -424,8 +464,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -441,7 +485,9 @@
           },
           "unit": "percent"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 7,
@@ -514,8 +560,12 @@
               "mode": "off"
             }
           },
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -532,7 +582,9 @@
           },
           "unit": "bytes"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 7,
@@ -612,8 +664,12 @@
             }
           },
           "decimals": 3,
-          "links": [],
-          "mappings": [],
+          "links": [
+            
+          ],
+          "mappings": [
+            
+          ],
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -630,7 +686,9 @@
           },
           "unit": "percentunit"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 7,
@@ -714,7 +772,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -730,7 +790,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -802,7 +864,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -818,7 +882,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -890,7 +956,9 @@
               "mode": "off"
             }
           },
-          "mappings": [],
+          "mappings": [
+            
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -906,7 +974,9 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -947,7 +1017,9 @@
   "refresh": "1m",
   "schemaVersion": 30,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    
+  ],
   "templating": {
     "list": [
       {
@@ -966,7 +1038,9 @@
         "label": "Environment",
         "multi": false,
         "name": "env",
-        "options": [],
+        "options": [
+          
+        ],
         "query": {
           "query": "label_values(env)",
           "refId": "Prometheus-env-Variable-Query"
@@ -986,7 +1060,9 @@
     "from": "now-12h",
     "to": "now"
   },
-  "timepicker": {},
+  "timepicker": {
+    
+  },
   "timezone": "",
   "title": "Schema Registry cluster",
   "uid": "9ixzve-Mk",
