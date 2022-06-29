@@ -31,8 +31,8 @@ COPY --from=builder $APP_HOME/opentelemetry-javaagent.jar opentelemetry-javaagen
 
 EXPOSE 5000  
 
-ENV COLLECTOR_ENDPOINT="http://collector:4317"
-ENV APP_NAME="spring-app"  
+ARG COLLECTOR_ENDPOINT="http://collector:4317"
+ARG APP_NAME="spring-app"  
 
 ENV JAVA_TOOL_OPTIONS "-Dcom.sun.management.jmxremote.ssl=false \
   -Dcom.sun.management.jmxremote.authenticate=false \
