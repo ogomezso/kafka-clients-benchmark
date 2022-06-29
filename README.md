@@ -31,12 +31,6 @@ Environment:
  * Spring-Kafka app 
 
 
-- Build apps:
-
-```sh
-docker-compose build
-```
-
 - Environment UP:
 
 ```sh
