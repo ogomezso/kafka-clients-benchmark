@@ -21,7 +21,9 @@ Environment:
  * Zookeeper
  * Confluent Kafka
  * Confluent Schema Registry
- * Confluent Connect - Data Generator
+ * Confluent Connect
+    * Datagen - Source - Generate ratings
+    * HTTP - Sink - ratings to HTTP service
  * Confluent Control Center
  * Prometheus
  * Grafana
@@ -29,6 +31,8 @@ Environment:
  * Zipkin
  * Java Producer / Consumer sample app 
  * Spring-Kafka app 
+ * Golang HTTP Service (log request bogy and headers)
+ * Golang Kafka consumer (consume ratings) 
 
 
 - Build apps:
@@ -36,6 +40,12 @@ Environment:
 ```sh
 docker-compose build
 ```
+
+or 
+
+```sh
+docker-compose up -d --force-recreate --build
+````
 
 - Environment UP:
 
