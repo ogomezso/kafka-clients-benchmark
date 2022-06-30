@@ -45,7 +45,7 @@ or
 
 ```sh
 docker-compose up -d --force-recreate --build
-````
+```
 
 - Environment UP:
 
