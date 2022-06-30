@@ -17,10 +17,19 @@ exporters:
     format: proto
 
   jaeger:
-    endpoint: jaeger:14250 
-    insecure: true
+    endpoint: jaeger:14250
+    tls:
+      insecure: true
+  
+  otlp/elastic: 
+    endpoint: apm-server:8200
+    tls:
+      insecure: true 
 
 processors:
+  memory_limiter:
+    check_interval: 1s
+    limit_mib: 2000
   batch:
 
 extensions:
@@ -35,9 +44,9 @@ service:
   pipelines:
     traces:
       receivers: [otlp]
-      processors: [batch]
-      exporters: [logging, zipkin, jaeger]
+      processors: [batch, memory_limiter]
+      exporters: [logging, zipkin, jaeger, otlp/elastic]
     metrics:
       receivers: [otlp]
-      processors: [batch]
-      exporters: [logging, prometheus]
+      processors: [batch, memory_limiter]
+      exporters: [logging, prometheus, otlp/elastic]

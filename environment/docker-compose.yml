@@ -1,21 +1,21 @@
 version: '3.8'
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:7.1.0 
+    image: confluentinc/cp-zookeeper:7.1.0
     ports:
       - "2181:2181"
       - "9999:9999"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
-      KAFKA_JMX_PORT: 9999  
+      KAFKA_JMX_PORT: 9999
       KAFKA_JMX_HOSTNAME: zookeeper
       EXTRA_ARGS: -javaagent:/usr/share/jmx-exporter/jmx_prometheus_javaagent-0.16.1.jar=1234:/usr/share/jmx-exporter/zookeeper.yml
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
 
   broker:
-    image: confluentinc/cp-server:7.1.0 
+    image: confluentinc/cp-server:7.1.0
     depends_on:
       - zookeeper
     ports:
@@ -45,7 +45,7 @@ services:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
 
   schema-registry:
-    image: confluentinc/cp-schema-registry:7.1.0 
+    image: confluentinc/cp-schema-registry:7.1.0
     depends_on:
       - broker
     ports:
@@ -59,7 +59,7 @@ services:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
 
   connect:
-    image: cnfldemos/cp-server-connect-datagen:0.5.0-6.2.0 
+    image: cnfldemos/cp-server-connect-datagen:0.5.0-6.2.0
     depends_on:
       - broker
       - schema-registry
@@ -91,7 +91,7 @@ services:
       EXTRA_ARGS: -javaagent:/usr/share/jmx-exporter/jmx_prometheus_javaagent-0.16.1.jar=1234:/usr/share/jmx-exporter/kafka_connect.yml
 
   control-center:
-    image: confluentinc/cp-enterprise-control-center:7.1.0 
+    image: confluentinc/cp-enterprise-control-center:7.1.0
     depends_on:
       - broker
       - schema-registry
@@ -111,13 +111,13 @@ services:
       PORT: 9021
 
   prometheus:
-    image: prom/prometheus:v2.36.2 
+    image: prom/prometheus:v2.36.2
     command:
-      - '--config.file=/etc/prometheus/prometheus.yml' 
+      - '--config.file=/etc/prometheus/prometheus.yml'
     ports:
       - 9090:9090
     volumes:
-      - ./monitoring/assets/prometheus/prometheus-config/:/etc/prometheus 
+      - ./monitoring/assets/prometheus/prometheus-config/:/etc/prometheus
 
   kafka-lag-exporter:
     image: lightbend/kafka-lag-exporter:0.6.7
@@ -126,7 +126,7 @@ services:
     restart: always
     volumes:
       - ./shared-assets/kafka-lag-exporter:/opt/docker/conf
-      - ./monitoring/assets/prometheus/security:/etc/kafka/secrets 
+      - ./monitoring/assets/prometheus/security:/etc/kafka/secrets
 
   grafana:
     image: grafana/grafana:9.0.2
@@ -136,7 +136,7 @@ services:
       - "GF_SECURITY_ADMIN_PASSWORD=password"
       - "GF_USERS_ALLOW_SIGN_UP=false"
     ports:
-      - "3000:3000" 
+      - "3000:3000"
     volumes:
       - ./monitoring/assets/grafana/provisioning/:/etc/grafana/provisioning
 
@@ -148,75 +148,143 @@ services:
 
   # Jaeger
   jaeger:
-   image: jaegertracing/all-in-one:latest
-   ports:
-     - "16686:16686"
-     - "14268"
-     - "14250"
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686"
+      - "14268"
+      - "14250"
 
   # Collector
   collector:
-   image: otel/opentelemetry-collector:latest
-   volumes:
-     - ./collector/config.yml:/etc/collector-gateway.yaml
-   command: [ "--config=/etc/collector-gateway.yaml" ]
-   ports:
-     - "1888:1888"   # pprof extension
-     - "13133:13133" # health_check extension
-     - "4317:4317"        # OTLP gRPC receiver
-     - "4318:4318"        # OTLP HTTP receiver
-     - "55670:55679" # zpages extension
-   depends_on:
-     - jaeger
-     - zipkin
- #spring app
-  spring-app: 
+    image: otel/opentelemetry-collector-contrib:latest
+    volumes:
+      - ./collector/config.yml:/etc/collector-gateway.yaml
+    command: [ "--config=/etc/collector-gateway.yaml" ]
+    ports:
+      - "1888:1888" # pprof extension
+      - "13133:13133" # health_check extension
+      - "4317:4317" # OTLP gRPC receiver
+      - "4318:4318" # OTLP HTTP receiver
+      - "55670:55679" # zpages extension
+    depends_on:
+      - jaeger
+      - zipkin
+  #spring app
+  spring-app:
     build:
       context: ../spring/spring-kafka
-      dockerfile: Dockerfile 
-      args: 
-        OTEL_VERSION: 1.15.0 
+      dockerfile: Dockerfile
+      args:
+        OTEL_VERSION: 1.15.0
         PROMETHEUS_AGENT_VERSION: 0.17.0
     environment:
-     - APP_NAME=spring-app 
-     - COLLECTOR_ENDPOINT=http://collector:4317
+      - APP_NAME="spring-app"
+      - COLLECTOR_ENDPOINT="http://collector:4317"
     ports:
       - "28080:28080"
     volumes:
       - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
     depends_on:
-     - collector  
- 
+      - collector
+
   #java producer
-  java-producer: 
+  java-producer:
     build:
       context: ../java/java-producer
-      dockerfile: Dockerfile 
-      args: 
-        OTEL_VERSION: 1.15.0 
+      dockerfile: Dockerfile
+      args:
+        OTEL_VERSION: 1.15.0
         PROMETHEUS_AGENT_VERSION: 0.17.0
     environment:
-     - APP_NAME=java-producer 
-     - COLLECTOR_ENDPOINT=http://collector:4317    
+      - APP_NAME="java-producer"
+      - COLLECTOR_ENDPOINT="http://collector:4317"
     ports:
       - "38080:38080"
     volumes:
-      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter 
+      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
     depends_on:
       - broker
       - schema-registry
-      - collector  
+      - collector
   #java consumer
-  java-consumer: 
+  java-consumer:
     build:
       context: ../java/java-consumer
-      dockerfile: Dockerfile 
-      args: 
-        OTEL_VERSION: 1.15.0 
+      dockerfile: Dockerfile
+      args:
+        OTEL_VERSION: 1.15.0
         PROMETHEUS_AGENT_VERSION: 0.17.0
+    environment:
+      - APP_NAME="java-consumer"
+      - COLLECTOR_ENDPOINT="http://collector:4317"
     volumes:
-      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter 
+      - ./shared-assets/jmx-exporter/:/usr/share/jmx-exporter
     depends_on:
       - broker
       - schema-registry
-      - collector  
+      - collector
+  #Elastic Stack with APM Server
+  apm-server:
+    image: docker.elastic.co/apm/apm-server:7.7.0
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      kibana:
+        condition: service_healthy
+    cap_add: ["CHOWN", "DAC_OVERRIDE", "SETGID", "SETUID"]
+    cap_drop: ["ALL"]
+    ports:
+    - 8200:8200
+    command: >
+       apm-server -e
+         -E apm-server.rum.enabled=true
+         -E setup.kibana.host=kibana:5601
+         -E setup.template.settings.index.number_of_replicas=0
+         -E apm-server.kibana.enabled=true
+         -E apm-server.kibana.host=kibana:5601
+         -E output.elasticsearch.hosts=["elasticsearch:9200"]
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test: curl --write-out 'HTTP %{http_code}' --fail --silent --output /dev/null http://localhost:8200/
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
+    environment:
+    - bootstrap.memory_lock=true
+    - cluster.name=docker-cluster
+    - cluster.routing.allocation.disk.threshold_enabled=false
+    - discovery.type=single-node
+    - ES_JAVA_OPTS=-XX:UseAVX=2 -Xms1g -Xmx1g
+    ulimits:
+      memlock:
+        hard: -1
+        soft: -1
+    volumes:
+    - esdata:/usr/share/elasticsearch/data
+    ports:
+    - 9200:9200
+    healthcheck:
+      interval: 20s
+      retries: 10
+      test: curl -s http://localhost:9200/_cluster/health | grep -vq '"status":"red"'
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.7.0
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+    - 5601:5601
+    healthcheck:
+      interval: 10s
+      retries: 20
+      test: curl --write-out 'HTTP %{http_code}' --fail --silent --output /dev/null http://localhost:5601/api/status
+
+volumes:
+  esdata:
+    driver: local
+
