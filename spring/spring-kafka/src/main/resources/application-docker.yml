@@ -4,7 +4,6 @@ spring:
 kafka:
   server-properties:
     bootstrap.servers: broker:29092
-    client.dns.lookup: use_all_dns_ips
     acks: all
     schema.registry.url: http://schema-registry:8081
     security.protocol: PLAINTEXT

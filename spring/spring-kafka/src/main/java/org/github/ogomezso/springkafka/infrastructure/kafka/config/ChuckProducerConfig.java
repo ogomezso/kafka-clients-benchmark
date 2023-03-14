@@ -23,7 +23,7 @@ public class ChuckProducerConfig {
   public Map<String, Object> chuckConfig() {
 
     Map<String,Object> props = new HashMap<>(configProperties.getServerProperties());
-    props.put(ProducerConfig.CLIENT_DNS_LOOKUP_CONFIG, configProperties.getAppProperties().getChuckClientId());
+    props.put(ProducerConfig.CLIENT_ID_CONFIG, configProperties.getAppProperties().getChuckClientId());
     props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
     props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 
