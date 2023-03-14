@@ -5,14 +5,12 @@ import java.util.Map;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 
-import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import lombok.RequiredArgsConstructor;
 
 @Configuration
@@ -23,10 +21,9 @@ public class ChuckProducerConfig {
 
   @Bean("chuckConfig")
   public Map<String, Object> chuckConfig() {
-    Map<String, Object> props = new HashMap<>();
-    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, configProperties.getBootstrapServers());
-    props.put(ProducerConfig.CLIENT_ID_CONFIG, configProperties.getChuckClientId());
-    props.put(ProducerConfig.ACKS_CONFIG, "all");
+
+    Map<String,Object> props = new HashMap<>(configProperties.getServerProperties());
+    props.put(ProducerConfig.CLIENT_ID_CONFIG, configProperties.getAppProperties().getChuckClientId());
     props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
     props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 
@@ -35,8 +32,7 @@ public class ChuckProducerConfig {
 
   @Bean(name = "chuckFactory")
   public ProducerFactory<String, String> chuckFactory() {
-    return new DefaultKafkaProducerFactory<>(chuckConfig(), StringSerializer::new,
-        StringSerializer::new);
+    return new DefaultKafkaProducerFactory<>(chuckConfig());
   }
 
   @Bean(name = "chuckTemplate")

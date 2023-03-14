@@ -22,7 +22,7 @@ COPY pom.xml $APP_HOME
 RUN mvn -f $APP_HOME/pom.xml clean package  
 
 # App ############################################
-FROM adoptopenjdk/openjdk11:ubi  
+FROM adoptopenjdk/openjdk11:jdk-11.0.18_10-ubuntu-slim
 
 COPY --from=builder $APP_HOME/target/java-client-jar-with-dependencies.jar app.jar
 COPY --from=builder $APP_HOME/config/application-docker.yml application-docker.yml

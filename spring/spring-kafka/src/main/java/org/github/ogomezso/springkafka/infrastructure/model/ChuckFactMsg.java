@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package org.github.ogomezso.springkafka.infrastructure.model.chuck;
+package org.github.ogomezso.springkafka.infrastructure.model;
 
 import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
@@ -14,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3165496535672586779L;
+  private static final long serialVersionUID = 2729607822965904281L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ChuckFactMsg\",\"namespace\":\"org.github.ogomezso.springkafka.infrastructure.model.chuck\",\"fields\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"timestamp\",\"type\":\"long\"},{\"name\":\"fact\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ChuckFactMsg\",\"namespace\":\"org.github.ogomezso.springkafka.infrastructure.model\",\"fields\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"timestamp\",\"type\":\"long\"},{\"name\":\"fact\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -174,8 +174,8 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
    * Creates a new ChuckFactMsg RecordBuilder.
    * @return A new ChuckFactMsg RecordBuilder
    */
-  public static org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder newBuilder() {
-    return new org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder();
+  public static org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder newBuilder() {
+    return new org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder();
   }
 
   /**
@@ -183,11 +183,11 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing builder to copy.
    * @return A new ChuckFactMsg RecordBuilder
    */
-  public static org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder newBuilder(org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder other) {
+  public static org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder newBuilder(org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder other) {
     if (other == null) {
-      return new org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder();
+      return new org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder();
     } else {
-      return new org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder(other);
+      return new org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder(other);
     }
   }
 
@@ -196,11 +196,11 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing instance to copy.
    * @return A new ChuckFactMsg RecordBuilder
    */
-  public static org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder newBuilder(org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg other) {
+  public static org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder newBuilder(org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg other) {
     if (other == null) {
-      return new org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder();
+      return new org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder();
     } else {
-      return new org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder(other);
+      return new org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder(other);
     }
   }
 
@@ -224,7 +224,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder other) {
+    private Builder(org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -244,7 +244,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing ChuckFactMsg instance
      * @param other The existing instance to copy.
      */
-    private Builder(org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg other) {
+    private Builder(org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -274,7 +274,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder setId(java.lang.CharSequence value) {
+    public org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder setId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -294,7 +294,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder clearId() {
+    public org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -314,7 +314,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'timestamp'.
       * @return This builder.
       */
-    public org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder setTimestamp(long value) {
+    public org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder setTimestamp(long value) {
       validate(fields()[1], value);
       this.timestamp = value;
       fieldSetFlags()[1] = true;
@@ -334,7 +334,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'timestamp' field.
       * @return This builder.
       */
-    public org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder clearTimestamp() {
+    public org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder clearTimestamp() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -353,7 +353,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'fact'.
       * @return This builder.
       */
-    public org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder setFact(java.lang.CharSequence value) {
+    public org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder setFact(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.fact = value;
       fieldSetFlags()[2] = true;
@@ -373,7 +373,7 @@ public class ChuckFactMsg extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'fact' field.
       * @return This builder.
       */
-    public org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg.Builder clearFact() {
+    public org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg.Builder clearFact() {
       fact = null;
       fieldSetFlags()[2] = false;
       return this;

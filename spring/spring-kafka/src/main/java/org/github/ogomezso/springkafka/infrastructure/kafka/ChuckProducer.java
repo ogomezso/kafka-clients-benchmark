@@ -1,7 +1,7 @@
 package org.github.ogomezso.springkafka.infrastructure.kafka;
 
 import org.github.ogomezso.springkafka.infrastructure.kafka.config.KafkaConfigProperties;
-import org.github.ogomezso.springkafka.infrastructure.model.chuck.ChuckFactMsg;
+import org.github.ogomezso.springkafka.infrastructure.model.ChuckFactMsg;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -35,7 +35,7 @@ class ChuckProducer {
 
   public void sendFact(String fact) {
     ListenableFuture<SendResult<String, String>> resultFuture = chuckTemplate
-        .send(configProperties.getChuckTopic(), fact);
+        .send(configProperties.getAppProperties().getChuckTopic(), fact);
 
     resultFuture.addCallback(new ListenableFutureCallback<>() {
       @Override
@@ -53,7 +53,7 @@ class ChuckProducer {
 
   public void sendFact(ChuckFactMsg fact) {
     ListenableFuture<SendResult<String, ChuckFactMsg>> resultFuture = chuckAvroTemplate
-        .send(configProperties.getChuckAvroTopic(), fact);
+        .send(configProperties.getAppProperties().getChuckAvroTopic(), fact);
 
     resultFuture.addCallback(new ListenableFutureCallback<>() {
       @Override

@@ -2,9 +2,13 @@ spring:
   jmx:
     enabled: true
 kafka:
-  bootstrap-servers: broker:29092
-  chuck-client-id: chuck-producer
-  chuck-topic: chuck-spring-topic
-  chuck-avro-client-id: chuck-avro-producer
-  chuck-avro-topic: chuck-spring-avro-topic
-  schema-registry-url: http://schema-registry:8081
+  server-properties:
+    bootstrap.servers: broker:29092
+    acks: all
+    schema.registry.url: http://schema-registry:8081
+    security.protocol: PLAINTEXT
+  app-properties:
+    chuck-client-id: chuck-producer
+    chuck-topic: chuck-spring-topic
+    chuck-avro-client-id: chuck-avro-producer
+    chuck-avro-topic: chuck-spring-avro-topic
