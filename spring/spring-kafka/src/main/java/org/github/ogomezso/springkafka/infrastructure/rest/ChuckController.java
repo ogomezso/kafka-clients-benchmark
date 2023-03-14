@@ -1,12 +1,7 @@
 package org.github.ogomezso.springkafka.infrastructure.rest;
 
-import java.sql.Timestamp;
-import java.time.Instant;
-
-import org.github.ogomezso.springkafka.domain.model.ChuckFact;
 import org.github.ogomezso.springkafka.infrastructure.kafka.ChuckAdapter;
 import org.github.ogomezso.springkafka.infrastructure.rest.model.ChuckFactResponse;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 

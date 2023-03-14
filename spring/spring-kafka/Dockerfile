@@ -23,8 +23,7 @@ RUN wget https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaage
  
 
 # APP 
-FROM adoptopenjdk/openjdk11:ubi  
-
+FROM adoptopenjdk/openjdk11:jdk-11.0.18_10-ubuntu-slim
 COPY --from=builder target/*.jar app.jar
 COPY --from=builder $APP_HOME/jmx_prometheus_javaagent.jar jmx_prometheus_javaagent.jar
 COPY --from=builder $APP_HOME/opentelemetry-javaagent.jar opentelemetry-javaagent.jar
