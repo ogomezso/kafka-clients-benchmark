@@ -1,4 +1,4 @@
-/.idea/
+**/.idea/
 **/target/
 *.iml
 **/.classpath
@@ -10,3 +10,4 @@
 **/target/
 .vscode/
 spring/spring-kafka/src/main/java/org/github/ogomezso/springkafka/infrastructure/model/chuck/
+
