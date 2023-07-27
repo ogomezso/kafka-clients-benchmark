@@ -10,12 +10,13 @@ import org.github.ogomezso.javaconsumer.infrastructure.kafka.ChuckService;
 
 public class App {
 
-  public static void main(String[] args) throws FileNotFoundException, URISyntaxException {
+  public static void main(String[] args) throws FileNotFoundException, URISyntaxException, Exception {
 
     ConfigHandler configHandler = new ConfigHandler();
     AppConfig config = configHandler.getAppConfig(args[0]);
 
     ChuckAdapter chuckAdapter = new ChuckService(config);
+
     chuckAdapter.pollMessages();
   }
 }

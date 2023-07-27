@@ -1,8 +1,12 @@
 appPort: 38081
-bootstrapServers: localhost:1092
+bootstrapServers: localhost:9092
 chuckClientId: chuck-java-consumer
 chuckGroupId: chuck-java-cg
 chuckTopic: chuck-java-topic
 chuckAvroClientId: chuck-java-avro-consumer
 chuckAvroTopic: chuck-java-avro-topic
+reconnectBackoffMs: 1000
+reconnectBackoffMaxMs: 300000
+retryBackOffMs: 3000
+sessionTimeoutMs: 30000
 schemaRegistryUrl: http://localhost:8081

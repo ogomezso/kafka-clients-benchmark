@@ -11,7 +11,7 @@ public class ChuckService implements ChuckAdapter {
   }
 
   @Override
-  public void pollMessages() {
+  public void pollMessages() throws Exception {
     consumer.pollMessage();
   }
 

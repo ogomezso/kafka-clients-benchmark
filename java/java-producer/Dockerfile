@@ -1,7 +1,7 @@
 ARG BUILD_HOME=/app
 
 # Builder ############################################
-FROM maven:3.6.0-jdk-11-slim AS builder
+FROM maven:3.8.6-openjdk-11-slim AS builder
 
 RUN  apt-get update \
   && apt-get install -y wget \
@@ -22,7 +22,7 @@ COPY pom.xml $APP_HOME
 RUN mvn -f $APP_HOME/pom.xml clean package  
 
 # App ############################################
-FROM adoptopenjdk/openjdk11:jdk-11.0.18_10-ubuntu-slim
+FROM adoptopenjdk/openjdk11:jdk-11.0.20_8-ubuntu-slim
 
 COPY --from=builder $APP_HOME/target/java-client-jar-with-dependencies.jar app.jar
 COPY --from=builder $APP_HOME/config/application-docker.yml application-docker.yml

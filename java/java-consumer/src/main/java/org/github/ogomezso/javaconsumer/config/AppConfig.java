@@ -13,6 +13,9 @@ public class AppConfig {
    private String chuckTopic;
    private String chuckAvroClientId;
    private String chuckAvroTopic;
+   private Long reconnectBackoffMs;
+   private Long reconnectBackoffMaxMs;
+   private Long retryBackOffMs;
    private String schemaRegistryUrl;
    private final ObjectMapper objectMapper = new ObjectMapper();
 }

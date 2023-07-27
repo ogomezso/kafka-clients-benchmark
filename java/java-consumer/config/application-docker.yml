@@ -5,4 +5,7 @@ chuckGroupId: chuck-java-cg
 chuckTopic: chuck-java-topic
 chuckAvroClientId: chuck-java-avro-consumer
 chuckAvroTopic: chuck-java-avro-topic
+reconnectBackoffMs: 1000
+reconnectBackoffMaxMs: 300000
+retryBackOffMs: 3000
 schemaRegistryUrl: http://schema-registry:8081
