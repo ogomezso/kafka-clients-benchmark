@@ -40,7 +40,7 @@ public class ChuckConsumer implements Runnable {
 
       while (true) {
         try {
-          final ConsumerRecords<String, String> consumerRecords = plainConsumer.poll(Duration.ofMillis(Long.MAX_VALUE));
+          final ConsumerRecords<String, String> consumerRecords = plainConsumer.poll(Duration.ofMillis(500));
           consumerRecords.forEach(record -> {
             System.out.printf("Consumer Record:(%d, %s, %d, %d)\n",
                 record.key(), record.value(),
